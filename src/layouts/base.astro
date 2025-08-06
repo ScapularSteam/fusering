@@ -1,3 +1,18 @@
 ---
-import '../styles/global.css'
+// Base layout imports frameworks, dependencies, and displays shared components across all pages i.e footer
+
+// Import tailwind framework
+import '../styles/tailwindimport.css'
+
+// Import shared components
+import Footer from '../components/shared/footer.astro'
 ---
+
+<html>
+    <slot />
+    <Footer/>
+
+    <script>
+        // To-do: load GSAP for more complex animations
+    </script>
+</html>
