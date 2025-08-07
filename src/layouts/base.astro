@@ -2,27 +2,25 @@
 // Base layout imports frameworks, dependencies, and displays shared components across all pages i.e footer
 
 // Import tailwind framework
-import '../styles/tailwindimport.css'
+import "../styles/global.css";
 
 // Import shared components
-import Head from '../components/shared/head.astro'
-import Footer from '../components/shared/footer.astro'
+import Head from "../components/shared/head.astro";
+import Footer from "../components/shared/footer.astro";
 ---
 
 <html>
-    <Head />
-    <body>
-        <slot />
-        <Footer/>
-    </body>
+  <Head />
+  <body>
+    <slot />
+    <Footer />
+  </body><script>
+    // To-do: load GSAP for more complex animations
+  </script>
 
-    <script>
-        // To-do: load GSAP for more complex animations
-    </script>
-
-    <style>
-        body {
-            background-color: #59a790;
-        }
-    </style>
+  <style>
+    body {
+      background-color: #59a790;
+    }
+  </style>
 </html>

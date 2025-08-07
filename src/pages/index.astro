@@ -1,15 +1,22 @@
 ---
-import Base from "../layouts/base.astro"
+import Base from "../layouts/base.astro";
 
-const fuseringLogo = "/logos/fusering-logo-colour.svg"
+const fuseringLogo = "/logos/fusering-logo-colour.svg";
 ---
 
 <Base>
-	<div class="h-screen flex items-center justify-center">
-		<div class="bg-red-400 flex flex-col items-center p-[2rem]">
-			<img src={fuseringLogo}>
-			<h1>Welcome to Fusering!</h1>
-			<h2>Build a Keyring, get your design shipped straight to your door, carabiner included!</h2>
-		</div>
-	</div>
+  <div class="h-screen flex items-center justify-center">
+    <div class="bg-red-400 flex items-center justify-center p-[1rem]">
+      <img src={fuseringLogo} class="p-[2rem]" />
+
+      <div class="flex flex-col items-center p-[2rem] shrink-0">
+        <h1>Welcome to Fusering!</h1>
+        <h2>
+          Build a Keyring, get your design shipped straight to your door,
+          carabiner included!
+        </h2>
+      </div>
+      <img src="" class="shrink" />
+    </div>
+  </div>
 </Base>
