@@ -5,7 +5,8 @@
 @theme {
   --color-PrimaryGreen: #59a790;
   --color-FuseringRedDark: #a1566c;
-  --color-FuseringRedLight: #a75970
+  --color-FuseringRedLight: #a75970;
+  --color-FuseringBlue: #5989a7;
 
   --font-poppins: Phantom Sans, sans-serif;
 
