@@ -4,7 +4,11 @@
 
 @theme {
   --color-PrimaryGreen: #59a790;
-  --font-poppins: Poppins, sans-serif;
+  --color-FuseringRedDark: #a1566c;
+  --color-FuseringRedLight: #a75970
+
+  --font-poppins: Phantom Sans, sans-serif;
+
 }
 
 

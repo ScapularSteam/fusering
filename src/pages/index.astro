@@ -2,21 +2,23 @@
 import Base from "../layouts/base.astro";
 
 const fuseringLogo = "/logos/fusering-logo-colour.svg";
+const cubePatternBackground = "/backgrounds/background_cube_pattern.svg";
 ---
 
 <Base>
   <div class="h-screen flex items-center justify-center">
-    <div class="bg-red-400 flex items-center justify-center p-[1rem]">
+    <div
+      class="h-screen flex items-center justify-center p-[1rem] flex-col rounded-3xl bg-[url(/backgrounds/background_cube_pattern.png)] lg:flex-row lg:h-auto"
+    >
       <img src={fuseringLogo} class="p-[2rem]" />
 
       <div class="flex flex-col items-center p-[2rem] shrink-0">
-        <h1>Welcome to Fusering!</h1>
-        <h2>
-          Build a Keyring, get your design shipped straight to your door,
-          carabiner included!
-        </h2>
+        <h1>
+          Create a Keyring, get your design shipped straight to your door!
+        </h1>
       </div>
-      <img src="" class="" />
+
+      <!--try image here -->
     </div>
   </div>
 </Base>
