@@ -8,7 +8,19 @@
   --color-FuseringRedLight: #a75970;
   --color-FuseringBlue: #5989a7;
 
-  --font-poppins: Phantom Sans, sans-serif;
+  --font-phantom-sans: Phantom Sans, sans-serif;
+
+  --color-cadillac-50: #faf5f7;
+  --color-cadillac-100: #f6edf1;
+  --color-cadillac-200: #eedce3;
+  --color-cadillac-300: #e2bfcd;
+  --color-cadillac-400: #cf97ac;
+  --color-cadillac-500: #bd7790;
+  --color-cadillac-600: #a75970;
+  --color-cadillac-700: #8f475a;
+  --color-cadillac-800: #773d4b;
+  --color-cadillac-900: #653642;
+  --color-cadillac-950: #3b1c23;
 
 }
 
