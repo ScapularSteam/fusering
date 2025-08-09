@@ -3,20 +3,21 @@ import Base from "../layouts/base.astro";
 import Navbar from "../components/shared/navbar.astro";
 
 const fuseringLogo = "/logos/fusering-logo-colour.svg";
+const hackclubLogo = "/logos/flag-orpheus-top.svg";
 ---
 
 <Base>
-  <Navbar />
-
+  
+  <img src={hackclubLogo} class="fixed flex top-0 left-0 w-[12rem]">
   <!-- Container with patterned background and  -->
   <div
-    class="h-screen flex items-center justify-center bg-[url(/backgrounds/background_cube_pattern.png)]"
+    class="z-2 md:h-[50vh] flex items-center justify-center bg-[url(/backgrounds/background_cube_pattern.png)] shadow-xl"
   >
     <!-- Centre card for logo and title -->
     <div
-      class="h-fit w-fit flex items-center justify-center flex-row bg-cadillac-600 rounded-4xl shadow-2xl p-[2rem] max-w-5xl"
+      class="md:h-fit w-fit flex items-center justify-center flex-col md:flex-row md:bg-cadillac-600 rounded-4xl md:shadow-xl p-[2rem] max-w-5xl mt-[4rem] mb-[4rem] md:m-[0rem]"
     >
-      <img src={fuseringLogo} class="p-[2rem] mt-[10rem] lg:mt-[0rem]" />
+      <img src={fuseringLogo} class="p-[2rem] lg:mt-[0rem]" />
       <h1
         class="font-[Phantom_Sans] text-4xl text-white font-semibold tracking-wide"
       >
@@ -24,4 +25,8 @@ const fuseringLogo = "/logos/fusering-logo-colour.svg";
       </h1>
     </div>
   </div>
+
+  <div class="z-1"></div>
+  <!-- Content goes here -->
+  <Navbar />
 </Base>
