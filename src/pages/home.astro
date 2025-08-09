@@ -1,15 +1,27 @@
 ---
 import Base from "../layouts/base.astro";
-import FuseringCardTemp from "../components/content/fuseringCardTemp.astro";
 import Navbar from "../components/shared/navbar.astro";
+
+const fuseringLogo = "/logos/fusering-logo-colour.svg";
 ---
 
 <Base>
-  <div class="flex w-screen items-center justify-center">
-    <Navbar />
-  </div>
+  <Navbar />
+
+  <!-- Container with patterned background and  -->
   <div
     class="h-screen flex items-center justify-center bg-[url(/backgrounds/background_cube_pattern.png)]"
   >
+    <!-- Centre card for logo and title -->
+    <div
+      class="h-fit w-fit flex items-center justify-center flex-row bg-cadillac-600 rounded-4xl shadow-2xl p-[2rem] max-w-5xl"
+    >
+      <img src={fuseringLogo} class="p-[2rem] mt-[10rem] lg:mt-[0rem]" />
+      <h1
+        class="font-[Phantom_Sans] text-4xl text-white font-semibold tracking-wide"
+      >
+        "Design a keyring, get your keyring and a clip for your backpack!"
+      </h1>
+    </div>
   </div>
 </Base>
