@@ -1,7 +1,7 @@
-/* stylelint-disable */
-
+/* Import tailwind v4 */
 @import "tailwindcss";
 
+/* Tailwind theme */
 @theme {
   --color-PrimaryGreen: #59a790;
   --color-FuseringRedDark: #a1566c;
@@ -38,7 +38,7 @@
 
 }
 
-
+/* Phantom Sans font imports */
 @font-face {
   font-family: 'Phantom Sans';
   src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff') format('woff'),
@@ -47,8 +47,6 @@
   font-style: normal;
   font-display: swap;
 }
-
-
 
 @font-face {
   font-family: 'Phantom Sans';
