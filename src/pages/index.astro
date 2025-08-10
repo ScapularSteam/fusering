@@ -1,13 +1,16 @@
 ---
 import Base from "../layouts/base.astro";
-import FuseringCardTemp from "../components/content/fuseringCardTemp.astro";
+import Navbar from "../components/shared/navbar.astro";
+import Hero from "../components/shared/hero.astro"
 
-const fuseringLogo = "/logos/fusering-logo-colour.svg";
-const cubePatternBackground = "/backgrounds/background_cube_pattern.svg";
+import HowitworksGrid from "../components/content/howitworksGrid.astro";
+import IntroAndRules from "../components/content/introAndRules.astro";
+
 ---
 
 <Base>
-  <div class="h-screen flex items-center justify-center">
-    <FuseringCardTemp />
-  </div>
+  
+  <HowitworksGrid/>
+  <IntroAndRules/>
+  
 </Base>
