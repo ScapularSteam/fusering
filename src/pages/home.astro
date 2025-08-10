@@ -3,47 +3,13 @@ import Base from "../layouts/base.astro";
 import Navbar from "../components/shared/navbar.astro";
 import Hero from "../components/shared/hero.astro"
 
-
+import HowitworksGrid from "../components/content/howitworksGrid.astro";
 
 ---
 
 <Base>
   
-  <div class="z-2 h-fit md:h-[90vh] flex items-center justify-center">
-    <div
-      class="md:h-[80vh] w-fit md:w-[70vw] flex items-center justify-center flex-col  rounded-4xl p-[2rem] md:m-[0rem]"
-    >
-    <!-- Grid for keyring images -->
-     <h1 class="w-full text-left mb-[2rem] text-white font-[Phantom_Sans] text-3xl">How it works</h1>
-
-
-      <div class="flex flex-col md:grid md:grid-cols-5 md:grid-rows-5 gap-[2rem] w-full h-full">
-
-        <!-- Step 1 -->
-        <div class="h-[25vh] md:h-auto md:col-span-2 md:row-span-2">
-          <img src="images/step1.png" class="w-full h-full object-cover rounded-2xl p-[1rem] bg-horizon-500 shadow-2xl">
-        </div>
-
-        <!-- Step 2 -->
-        <div class="h-[25vh] md:h-auto md:col-span-3 md:row-span-3 md:col-start-3">
-          <img src="images/step2.png" class="w-full h-full object-cover rounded-2xl p-[1rem] bg-horizon-500 shadow-2xl">
-        </div>
-
-        <!-- Step 3 -->
-        <div class="h-[25vh] md:h-auto md:col-span-2 md:row-span-3 md:row-start-3">
-          <img src="images/step3.jpg" class="w-full h-full object-cover rounded-2xl p-[1rem] bg-horizon-500 shadow-2xl">
-        </div>
-
-        <!-- Step 4 -->
-        <div class="h-[25vh] md:h-auto md:col-span-3 md:row-span-2 md:col-start-3 md:row-start-4">
-          <img src="images/step4.jpg" class="w-full h-full object-cover rounded-2xl p-[1rem] bg-horizon-500 shadow-2xl">
-        </div>
-
-      </div>
-
-       
-    </div>
-  </div>
+  <HowitworksGrid/>
   
   
 </Base>
